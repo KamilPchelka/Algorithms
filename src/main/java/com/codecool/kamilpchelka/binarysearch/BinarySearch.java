@@ -27,6 +27,7 @@ public class BinarySearch {
 
             if (data.get(midPoint) == value) {
                 index = midPoint;
+                break;
             } else if (data.get(midPoint) > value) {
                 upperBound = midPoint - 1;
             } else {
