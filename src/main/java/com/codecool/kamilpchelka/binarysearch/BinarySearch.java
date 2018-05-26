@@ -1,6 +1,6 @@
 package com.codecool.kamilpchelka.binarysearch;
 
-import com.codecool.kamilpchelka.tools.CollectionsSortedChecker;
+import com.codecool.kamilpchelka.tools.CollectionsTools;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public class BinarySearch {
 
     public BinarySearch(ArrayList<Integer> data) {
         this.data = data;
-        new CollectionsSortedChecker().isSorted(data);
+        new CollectionsTools().isSorted(data);
     }
 
     public int get(int value) {
