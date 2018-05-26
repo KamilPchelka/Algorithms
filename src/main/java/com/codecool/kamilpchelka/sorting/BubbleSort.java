@@ -1,9 +1,13 @@
 package com.codecool.kamilpchelka.sorting;
 
+import com.codecool.kamilpchelka.tools.CollectionsTools;
+
 public class BubbleSort {
 
 
     public int[] sort(int[] data) {
+
+        CollectionsTools collectionsTools = new CollectionsTools();
 
         if (data.length == 1) return data;
 
@@ -13,10 +17,8 @@ public class BubbleSort {
 
                 if (data[y] > data[y + 1]) {
 
-                    int temp = data[y];
+                    collectionsTools.swap(data, y, y + 1);
 
-                    data[y] = data[y + 1];
-                    data[y + 1] = temp;
                 }
 
 
