@@ -2,7 +2,7 @@ package com.codecool.kamilpchelka.tools;
 
 import java.util.Collection;
 
-public class CollectionsSortedChecker {
+public class CollectionsTools {
 
 
     public boolean isSorted(Collection<? extends Integer> collection) {
@@ -23,6 +23,16 @@ public class CollectionsSortedChecker {
         }
 
         return true;
+    }
+
+    public void swap(int[] array, int i1, int i2) {
+
+        int temp = array[i1];
+
+        array[i1] = array[i2];
+
+        array[i2] = temp;
+
     }
 
 }
